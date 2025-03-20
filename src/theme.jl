@@ -19,14 +19,14 @@ struct AestheticSuperpositionTheme
         theme = Theme(
             figure_padding=2,
             size=size_pt,
-            fontsize=10,
+            fontsize=12,
             ##fonts=(; LaTeX=LaTeX_font),
             Lines=(
                 linewidth=2.0,
             ),
             Scatter=(
-                markersize=5.0,
-                strokewidth=0.7,
+                markersize=3.0,
+                strokewidth=2.0,
                 marker=:circle
             ),
             ScatterLines=(
@@ -54,6 +54,9 @@ struct AestheticSuperpositionTheme
                 titlefont=:regular,
                 titlegap=3,
                 margin=(7.0f0, 7.0f0, 7.0f0, 7.0f0),
+            ),
+            Colorbar=(
+                tickalign=1,
             ),
         )
 
