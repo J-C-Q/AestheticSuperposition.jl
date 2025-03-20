@@ -17,7 +17,7 @@ struct AestheticSuperpositionTheme
         size_pt = 72 .* size_inches
 
         theme = Theme(
-            figure_padding=2,
+            figure_padding=4,
             size=size_pt,
             fontsize=12,
             ##fonts=(; LaTeX=LaTeX_font),
