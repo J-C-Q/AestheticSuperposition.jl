@@ -1,4 +1,4 @@
-struct CustomTheme
+struct AestheticSuperpositionTheme
     name::Symbol
     size_inches::Tuple{Int,Int}
     type::String
@@ -6,7 +6,7 @@ struct CustomTheme
     theme::Attributes
 
 
-    function CustomTheme(;
+    function AestheticSuperpositionTheme(;
         name::Symbol=:AestheticSuperposition,
         size_inches::Tuple{Int,Int}=(5, 3),
         type::String="svg",
@@ -65,7 +65,7 @@ struct CustomTheme
 end
 
 
-function update_theme!(custom_theme::CustomTheme)
+function update_theme!(custom_theme::AestheticSuperpositionTheme)
     # change appearance in a jupyter notebook
     CairoMakie.activate!(type=custom_theme.type, pt_per_unit=custom_theme.pt_per_unit)
 
@@ -74,7 +74,7 @@ function update_theme!(custom_theme::CustomTheme)
 end
 
 
-function set_theme!(custom_theme::CustomTheme)
+function set_theme!(custom_theme::AestheticSuperpositionTheme)
     # change appearance in a jupyter notebook
     CairoMakie.activate!(type=custom_theme.type, pt_per_unit=custom_theme.pt_per_unit)
 

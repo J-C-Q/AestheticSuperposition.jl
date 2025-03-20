@@ -5,5 +5,5 @@ import CairoMakie: set_theme!, update_theme!
 
 include("theme.jl")
 
-export CustomTheme, set_theme!, update_theme!
+export AestheticSuperpositionTheme, set_theme!, update_theme!
 end
