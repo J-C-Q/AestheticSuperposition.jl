@@ -1,5 +1,9 @@
 module AestheticSuperposition
 
-# Write your package code here.
+using CairoMakie
+import CairoMakie: set_theme!, update_theme!
 
+include("theme.jl")
+
+export CustomTheme, set_theme!, update_theme!
 end
